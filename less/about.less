@@ -1,0 +1,57 @@
+.home__aboutPicDiv {
+  background-image: url("../images/mr_bloks.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  height: 150px;
+  width: 150px;
+
+  .home__aboutName {
+    width: 100%;
+    background-color: rgba(57, 57, 57, 0.7);
+    padding: 5px 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.home__div--aboutTR {
+  background-image: url("../images/blocks2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.home__div--aboutBL {
+  background-image: url("../images/blocks1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  order: 4;
+}
+
+@media all and (min-width: 900px) {
+  .home__div--aboutBL {
+    order: initial;
+  }
+}
+
+.home__div--aboutBR {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .home__abouttagline {
+    width: 90%;
+  }
+
+  @media all and (min-width: 600px) {
+    .home__abouttagline {
+      width: 70%;
+    }
+  }
+}

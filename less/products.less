@@ -1,0 +1,105 @@
+.products{
+  display: flex;
+  flex-wrap: wrap;
+
+  .products__half {
+    width: 100%;
+    height: 50vh;
+    background-color: @lightgray;
+  }
+
+  @media all and (min-width: 900px) {
+    .products__half {
+      width: 50%;
+    }
+  }
+
+  .products__half--topleft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55px;
+
+    .products__welcome {
+      font-size: 55px;
+      margin-bottom: 0;
+    }
+  }
+
+  @media all and (min-width: 900px) {
+    .products__half--topleft {
+      margin-top: 0;
+    }
+  }
+
+  .products__half--topright {
+    background-image: url("../images/lego1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .products__product {
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 2px solid @gray;
+
+    .products__title, .products__price {
+      width: 100%;
+      background-color: rgba(57, 57, 57, 0.7);
+      padding: 5px 0;
+      margin-bottom: 0;
+      text-align: center;
+      color: #fff;
+    }
+  }
+
+  .products__product--1 {
+    background-image: url("../images/walker.jpg");
+  }
+
+  .products__product--2 {
+    background-image: url("../images/walker2.jpg");
+  }
+
+  .products__product--3 {
+    background-image: url("../images/speeder.jpg");
+  }
+
+  .products__product--4 {
+    background-image: url("../images/dropship.jpg");
+  }
+
+  .products__product--5 {
+    background-image: url("../images/walker3.jpeg");
+  }
+
+  .products__product--6 {
+    background-image: url("../images/yoda.jpg");
+  }
+
+  .products__product--7 {
+    background-image: url("../images/bomber.jpg");
+  }
+
+  .products__product--8 {
+    background-image: url("../images/walker4.jpg");
+  }
+
+  .products__product--9 {
+    background-image: url("../images/walker5.png");
+  }
+
+  @media all and (min-width: 900px) {
+    .products__product {
+      width: 33.3%;
+    }
+  }
+}
